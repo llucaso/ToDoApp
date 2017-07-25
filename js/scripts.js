@@ -29,7 +29,7 @@ function addItemTodo(text) {
 	task.innerText = text;
 
 	var imgTrash = document.createElement('img');
-	imgTrash.src = '/img/trash.png';
+	imgTrash.src = 'img/trash.png';
 	imgTrash.classList.add('trash');
 // Click event for removing tasks
 	imgTrash.addEventListener('click', removeItem);
