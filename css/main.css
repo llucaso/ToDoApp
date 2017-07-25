@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border-sizing: border-box; }
+
+body {
+  background-color: black; }
+
+.container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+
+.ToDo-List {
+  width: 320px;
+  height: 36px;
+  background-color: #2e3641; }
+  .ToDo-List .lines {
+    padding: 18px 2px;
+    margin-left: 30px;
+    border-color: #454f5c; }
+  .ToDo-List h4 {
+    color: #dae4eb;
+    font-family: "Lato", "sans-serif";
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 42px;
+    margin-top: 10px; }
+
+.row {
+  height: 28px;
+  width: 318px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6ebed;
+  border-left: 1px solid #e6ebed;
+  border-right: 1px solid #e6ebed; }
+  .row .input {
+    margin-left: 45px;
+    margin-top: 7px;
+    width: 239px;
+    border: none;
+    outline: none;
+    font-family: "Lato", "sans-serif";
+    color: #2e3641; }
+  .row img {
+    position: absolute;
+    margin: 11px 10px;
+    cursor: pointer; }
+
+.todo-container .row-text {
+  height: 28px;
+  width: 318px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6ebed;
+  border-left: 1px solid #e6ebed;
+  border-right: 1px solid #e6ebed; }
+  .todo-container .row-text p {
+    display: inline-block;
+    margin-left: 45px;
+    margin-top: 7px;
+    width: 239px;
+    border: none;
+    outline: none;
+    font-family: "Lato", "sans-serif";
+    font-size: 13.33px;
+    color: #2e3641; }
+  .todo-container .row-text img {
+    position: absolute;
+    margin: 11px 10px;
+    cursor: pointer; }
+  .todo-container .row-text .checked-text {
+    color: #9eb2c0;
+    text-decoration: line-through; }
+  .todo-container .row-text .checked-trash {
+    opacity: 0.4; }
+  .todo-container .row-text .trash {
+    margin: 8px 12px;
+    position: absolute; }
+
+.lines {
+  padding: 14.5px 2px;
+  border-left: 1px solid #f2e3df;
+  border-right: 1px solid #f2e3df;
+  position: absolute;
+  z-index: 1;
+  margin-left: 29px; }
+
+label input {
+  visibility: hidden;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  overflow: hidden; }
+
+label span {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 9px;
+  width: 9px;
+  display: inline-block;
+  background: url(../img/Checkbox.png);
+  position: absolute; }
+
+[type=checkbox]:checked + span {
+  background: url(../img/ok.png); }
+
+/*# sourceMappingURL=main.css.map */
