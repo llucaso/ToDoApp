@@ -26,11 +26,14 @@ function addItemTodo(text) {
 	lines.classList.add('lines');
 
 	var task = document.createElement('p');
+	task.contentEditable = "true";
+	task.setAttribute("contenteditable", "true");
 	task.innerText = text;
-
+	
 	var imgTrash = document.createElement('img');
 	imgTrash.src = 'img/trash.png';
 	imgTrash.classList.add('trash');
+
 // Click event for removing tasks
 	imgTrash.addEventListener('click', removeItem);
 
@@ -59,15 +62,23 @@ function checkTask(){
 	var text = item.getElementsByTagName('p');
 	var img = item.getElementsByTagName('img');
 	var checkbox = item.getElementsByTagName('input');
-
+	
 	if (checkbox[0].checked) {
 
 		text[0].classList.add('checked-text');
 		img[0].classList.add('checked-trash');
+		text[0].contentEditable = "true";
+		text[0].setAttribute("contenteditable", "false");
 
 	} else {
 		text[0].classList.remove('checked-text');
 		img[0].classList.remove('checked-trash');
+		
 
 	}
+
+	 
 };
+
+
+
